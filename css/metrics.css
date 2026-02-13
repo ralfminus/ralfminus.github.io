@@ -1,0 +1,58 @@
+:root {
+    /* --- Colors --- */
+    --color-obsidian: #0B0B0B;
+    --color-copper: #B87333;
+    --color-steel: #7A7C7E;
+    --color-white: #F4F4F4;
+
+    /* --- Typography --- */
+    --font-headline: 'Inter Tight', sans-serif;
+    --font-body: 'Roboto Mono', monospace;
+    --font-accent: 'Libre Baskerville', serif;
+
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-bold: 700;
+    --weight-extrabold: 800;
+
+    /* --- Spacing (8-Point Grid) --- */
+    --space-unit: 8px;
+    --space-xs: calc(var(--space-unit) * 1);
+    /* 8px */
+    --space-s: calc(var(--space-unit) * 2);
+    /* 16px */
+    --space-m: calc(var(--space-unit) * 3);
+    /* 24px */
+    --space-l: calc(var(--space-unit) * 5);
+    /* 40px */
+    --space-xl: calc(var(--space-unit) * 8);
+    /* 64px */
+    --space-xxl: calc(var(--space-unit) * 12);
+    /* 96px */
+
+    /* --- Layout --- */
+    --container-width: 1440px;
+    --grid-columns: 12;
+    --grid-gap: var(--space-m);
+
+    /* --- Effects --- */
+    --border-steel: 1px solid rgba(122, 124, 126, 0.3);
+    --border-copper: 2px solid var(--color-copper);
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- Responsive Overrides --- */
+@media (max-width: 768px) {
+    :root {
+        /* Reduce large spacings on Tablet/Mobile */
+        --space-l: calc(var(--space-unit) * 3);
+        /* 24px */
+        --space-xl: calc(var(--space-unit) * 5);
+        /* 40px */
+        --space-xxl: calc(var(--space-unit) * 8);
+        /* 64px */
+        --container-width: 100%;
+        --grid-gap: var(--space-s);
+    }
+}

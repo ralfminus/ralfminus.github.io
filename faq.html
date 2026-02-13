@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Skarosserie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/metrics.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .faq-item {
+            border-bottom: 1px solid var(--color-steel);
+            padding: var(--space-m) 0;
+            cursor: pointer;
+        }
+
+        .faq-question {
+            font-family: var(--font-headline);
+            font-size: 1.125rem;
+            color: var(--color-white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            color: var(--color-copper);
+            font-weight: bold;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            color: var(--color-steel);
+            font-family: var(--font-body);
+            margin-top: var(--space-s);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            /* Arbitrary high value */
+            margin-bottom: var(--space-m);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-overlay"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="img/skarosserie logo AI (freigestellt weiß).png" alt="Skarosserie" class="logo-img">
+            </a>
+            <nav class="nav">
+                <a href="leistungen.html" class="nav__link">LEISTUNGEN</a>
+                <a href="philosophie.html" class="nav__link">PHILOSOPHIE</a>
+                <a href="faq.html" class="nav__link" style="color: var(--color-copper);">FAQ</a>
+                <a href="kontakt.html" class="nav__link">KONTAKT</a>
+            </nav>
+            <div class="header__actions">
+                <a href="kontakt.html" class="cta-button cta-button--small">ANFRAGE STARTEN</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main style="padding-top: 120px;">
+        <section class="grid-bg" style="padding: var(--space-xxl) 0;">
+            <div class="container">
+                <h1 class="hero__slogan" style="font-size: 3rem; margin-bottom: var(--space-l);">HÄUFIGE<br>FRAGEN</h1>
+
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--space-xl);">
+                    <!-- FAQ List -->
+                    <div class="faq-list">
+
+                        <div class="faq-item">
+                            <div class="faq-question">Was benötigen Sie als Vorlage? Reicht das alte Bauteil aus?</div>
+                            <div class="faq-answer">
+                                Ja, in den meisten Fällen ist das Originalteil – auch wenn es beschädigt ist – die beste
+                                Vorlage. Mit unserem hochauflösenden 3D-Scanner digitalisieren wir das Bauteil und
+                                können Defekte oder Verschleiß am Computer korrigieren.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Mit welchen Kosten muss ich rechnen?</div>
+                            <div class="faq-answer">
+                                Die Kosten sind individuell (Komplexität, Größe, Material). Sie erhalten immer ein
+                                festes Angebot nach Analyse. Bedenken Sie: Es ist eine Investition in eine Lösung, die
+                                anderswo nicht existiert.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Wie lange dauert der Prozess?</div>
+                            <div class="faq-answer">
+                                Ein typisches Projekt (Scan bis Bauteil) dauert ca. 6 Wochen. Wir geben aber immer einen
+                                realistischen Zeitplan vorab.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Welche Marken unterstützen Sie?</div>
+                            <div class="faq-answer">
+                                Jede Marke. Spezialisiert sind wir auf Porsche, Mercedes-Benz, Jaguar, Ferrari, Aston
+                                Martin und viele mehr.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Wie stellen Sie die Passgenauigkeit sicher?</div>
+                            <div class="faq-answer">
+                                Durch den digitalen Prozess: 1. Scan (Hundertstel mm genau). 2. CAD-Konstruktion. 3.
+                                Werkzeugbau auf Basis dieser Daten. 4. Soll-Ist-Vergleich des fertigen Teils.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Sidebar Image -->
+                    <div style="position: sticky; top: 120px;">
+                        <img src="img/werkzeugherstellung_bauteil_digitalisierung_skarosserie.jpg" alt="Digitalisierung"
+                            style="border: 1px solid var(--color-steel);">
+                        <p style="margin-top: var(--space-m); font-size: 0.875rem; color: var(--color-steel);">
+                            Unser Prozess: Vom Scan zur Datei, vom Werkzeug zum Blech.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontakt" class="footer">
+        <div class="container footer__container">
+            <div class="footer__bottom">
+                <p>&copy; 2026 SKAROSSERIE. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Toggle
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

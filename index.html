@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skarosserie - Manufaktur für Prototypen & Oldtimer-Teile</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/metrics.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Grid Overlay (Dev) -->
+    <div class="grid-overlay"></div>
+
+    <!-- 1. Header/Navigation -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="img/skarosserie logo AI (freigestellt weiß).png" alt="Skarosserie" class="logo-img">
+            </a>
+            <nav class="nav">
+                <a href="leistungen.html" class="nav__link">LEISTUNGEN</a>
+                <a href="philosophie.html" class="nav__link">PHILOSOPHIE</a>
+                <a href="faq.html" class="nav__link">FAQ</a>
+                <a href="kontakt.html" class="nav__link">KONTAKT</a>
+            </nav>
+            <div class="header__actions">
+                <a href="#" class="cta-button cta-button--small">ANFRAGE STARTEN</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <!-- 2. Hero Section -->
+    <!-- 2. Hero Section (Sticky Scroll Wrapper) -->
+    <div class="hero-scroll-wrapper">
+        <section class="hero grid-bg">
+            <div class="container hero__container">
+                <!-- Left: KPIs -->
+                <div class="hero__left">
+                    <div class="kpi-block">
+                        <span class="kpi-label">LOCATION</span>
+                        <span class="kpi-value">BRETZFELD</span>
+                    </div>
+                    <!-- Precision removed as requested -->
+                    <h1 class="hero__slogan">
+                        THE<br>IMPOSSIBLE<br>PART
+                    </h1>
+                    <p class="hero__subtext">
+                        Wir fertigen die Blechteile, die Sie nirgendwo kaufen können.
+                    </p>
+                </div>
+
+                <!-- Center: Scan Animation Placeholder -->
+                <div class="hero__center">
+                    <div class="scan-frame">
+                        <canvas id="hero-scan-canvas" width="600" height="800"></canvas>
+                    </div>
+                </div>
+
+                <!-- Right: Promise -->
+                <div class="hero__right">
+                    <h2 class="section-label">REVERSE ENGINEERING</h2>
+                    <p class="hero__desc">
+                        Vom 3D-Scan bis zum einbaufertigen Bauteil. Digitale Rekonstruktion und manuelle Fertigung aus
+                        einer
+                        Hand.<br><br>
+                        Losgröße 1 bis 10.000.
+                    </p>
+                    <div class="hero__meta">
+                        <span class="meta-label">STATUS</span>
+                        <span class="meta-value">OPERATIONAL</span>
+                    </div>
+                    <a href="kontakt.html" class="cta-button">PROJEKT ANFRAGEN</a>
+                </div>
+            </div>
+            <!-- Background Title Overlay -->
+            <div class="hero__bg-title">INDUSTRIAL HERITAGE. DIGITAL FORENSICS.</div>
+        </section>
+    </div>
+
+    <!-- 3. Manufaktur / Services -->
+    <section id="leistungen" class="services grid-bg">
+        <div class="container">
+            <h2 class="section-title">UNSERE KOMPETENZEN</h2>
+            <p class="section-subtitle">VON DER IDEE ZUM BAUTEIL</p>
+
+            <div class="services__grid">
+                <!-- Card 1 -->
+                <article class="service-card"
+                    style="background-image: linear-gradient(rgba(11,11,11,0.85), rgba(11,11,11,0.95)), url('img/3d_messtechnik_bauteilvermessung_skarosserie.jpg'); background-size: cover; background-position: center;">
+                    <div class="service-card__header">
+                        <span class="service-card__number">01</span>
+                        <h3 class="service-card__title">ENTWICKLUNG &<br>KONSTRUKTION</h3>
+                    </div>
+                    <ul class="service-card__list">
+                        <li>Reverse Engineering</li>
+                        <li>Fertigungskonzepte</li>
+                        <li>Werkzeugbau</li>
+                    </ul>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="service-card"
+                    style="background-image: linear-gradient(rgba(11,11,11,0.85), rgba(11,11,11,0.95)), url('img/pressteile_blechteile_skarosserie.jpg'); background-size: cover; background-position: center;">
+                    <div class="service-card__header">
+                        <span class="service-card__number">02</span>
+                        <h3 class="service-card__title">UMFORMUNG &<br>FERTIGUNG</h3>
+                    </div>
+                    <ul class="service-card__list">
+                        <li>Pressen & Tiefziehen</li>
+                        <li>Manuelle Umformung</li>
+                        <li>Einpressen & Bördeln</li>
+                    </ul>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="service-card"
+                    style="background-image: linear-gradient(rgba(11,11,11,0.85), rgba(11,11,11,0.95)), url('img/handarbeit_daengeln_klopfen_skarosserie.jpg'); background-size: cover; background-position: center;">
+                    <div class="service-card__header">
+                        <span class="service-card__number">03</span>
+                        <h3 class="service-card__title">FÜGEN &<br>MONTAGE</h3>
+                    </div>
+                    <ul class="service-card__list">
+                        <li>Zertifiziertes Schweißen</li>
+                        <li>Clinchen (Fügen)</li>
+                        <li>Kleben & Montage</li>
+                    </ul>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="service-card"
+                    style="background-image: linear-gradient(rgba(11,11,11,0.85), rgba(11,11,11,0.95)), url('img/werkzeugherstellung_bauteil_digitalisierung_skarosserie.jpg'); background-size: cover; background-position: center;">
+                    <div class="service-card__header">
+                        <span class="service-card__number">04</span>
+                        <h3 class="service-card__title">QUALITÄTS<br>SICHERUNG</h3>
+                    </div>
+                    <ul class="service-card__list">
+                        <li>3D-Messverfahren</li>
+                        <li>Bauteilprüfung</li>
+                        <li>Dokumentation</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Comparison -->
+    <section class="comparison grid-bg">
+        <div class="container">
+            <h2 class="section-title">WAS UNS UNTERSCHEIDET</h2>
+
+            <div class="comparison__grid">
+                <!-- Competitor 1 -->
+                <div class="comparison-col competitor">
+                    <h3 class="comparison-title">INDUSTRIELLER FERTIGER</h3>
+                    <p>Optimiert auf Großserien.</p>
+                    <p>Starre Prozesse.</p>
+                    <p>Hohe Mindestmengen.</p>
+                </div>
+
+                <!-- Skarosserie -->
+                <div class="comparison-col hero-col">
+                    <div class="hero-col__highlight"></div>
+                    <h3 class="comparison-title">SKAROSSERIE</h3>
+                    <p class="highlight-text">Ideal für nicht mehr verfügbare Teile.</p>
+                    <p class="highlight-text">Digital & Manuell kombiniert.</p>
+                    <p class="highlight-text">Flexibel (Losgröße 1-10.000).</p>
+                    <p class="highlight-text">Alles aus einer Hand.</p>
+                </div>
+
+                <!-- Competitor 2 -->
+                <div class="comparison-col competitor">
+                    <h3 class="comparison-title">KLASSISCHER HANDWERK</h3>
+                    <p>Rein manuelles Vorgehen.</p>
+                    <p>Nicht digital messbar.</p>
+                    <p>Keine exakte Wiederholbarkeit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Applications -->
+    <section class="applications grid-bg">
+        <div class="container">
+            <h2 class="section-title">EINSATZGEBIETE</h2>
+            <div class="app__grid">
+                <a href="oldtimer-teile.html" class="app-card" style="text-decoration: none;">
+                    <h3 class="app-card__title">OLDTIMER TEILE<br>RESTAURATION</h3>
+                    <p class="app-card__desc">Werterhalt durch originalgetreue Rekonstruktion von Teilen, die es nicht
+                        mehr gibt.</p>
+                </a>
+                <a href="prototypen-teile.html" class="app-card" style="text-decoration: none;">
+                    <h3 class="app-card__title">PROTOTYPEN TEILE<br>BAU</h3>
+                    <p class="app-card__desc">Seriennahe Validierung. Beschleunigte Testphasen. Fehlervermeidung vor der
+                        Serie.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer id="kontakt" class="footer">
+        <div class="container footer__container">
+            <div class="footer__left">
+                <h2 class="footer__slogan">PRÄZISION IST KEIN ZUFALL.<br>ES IST EIN PROTOKOLL.</h2>
+                <a href="https://wa.me/491728807046" class="cta-button cta-button--copper">WHATSAPP SUPPORT STARTEN</a>
+            </div>
+
+            <div class="footer__right">
+                <div class="contact-block">
+                    <h4>ADRESSE</h4>
+                    <p>Mainhardter Str. 39<br>74626 Bretzfeld<br>Deutschland</p>
+                </div>
+                <div class="contact-block">
+                    <h4>KONTAKT</h4>
+                    <p>+49 172 8807046<br>kontakt@skarosserie.de</p>
+                </div>
+                <div class="contact-block">
+                    <h4>LEGAL</h4>
+                    <p><a href="#">Impressum</a><br><a href="#">Datenschutz</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 SKAROSSERIE. ALL RIGHTS RESERVED.</p>
+            <p>SYSTEM: SK-WEB-V2.0</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
